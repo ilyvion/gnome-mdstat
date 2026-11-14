@@ -4,5 +4,5 @@
   "description": "Shows the state of Linux software RAID (md) arrays in the top bar, on this machine or on a remote host over SSH.",
   "shell-version": ["50"],
   "settings-schema": "org.gnome.shell.extensions.mdstat",
-  "url": ""
+  "url": "https://github.com/ilyvion/gnome-mdstat"
 }
