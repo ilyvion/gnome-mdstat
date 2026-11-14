@@ -1,0 +1,21 @@
+{
+  "name": "gnome-mdstat",
+  "version": "1.0.0",
+  "description": "GNOME Shell extension showing Linux software RAID (md) status in the top bar",
+  "type": "module",
+  "private": true,
+  "license": "MIT OR Apache-2.0",
+  "scripts": {
+    "build": "./scripts/build.sh",
+    "check": "tsc --noEmit",
+    "test": "npm run build && node --test",
+    "link": "./scripts/link.sh",
+    "pack": "npm run build && ./scripts/pack.sh",
+    "nested": "npm run build && dbus-run-session gnome-shell --devkit"
+  },
+  "devDependencies": {
+    "@girs/gjs": "^4.0.0",
+    "@girs/gnome-shell": "~50.0.4",
+    "typescript": "^5.9.0"
+  }
+}

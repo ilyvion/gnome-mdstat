@@ -1,0 +1,55 @@
+.mdstat-label {
+  padding-left: 4px;
+}
+
+.mdstat-warning {
+  color: #f8e45c;
+}
+
+.mdstat-error {
+  color: #ff7b63;
+}
+
+.mdstat-dim {
+  opacity: 0.5;
+}
+
+.mdstat-detail {
+  font-size: 0.9em;
+}
+
+.mdstat-heading {
+  font-weight: bold;
+}
+
+.mdstat-pips {
+  spacing: 6px;
+}
+
+.mdstat-pip-group {
+  spacing: 2px;
+}
+
+.mdstat-pip {
+  width: 5px;
+  height: 13px;
+  border-radius: 2px;
+}
+
+.mdstat-pip-ok {
+  background-color: #f2f2f2;
+}
+
+.mdstat-pip-rebuilding {
+  background-color: #f8e45c;
+}
+
+.mdstat-pip-failed {
+  background-color: #ff7b63;
+}
+
+.mdstat-pip-missing {
+  width: 3px;
+  height: 11px;
+  border: 1px solid #ff7b63;
+}

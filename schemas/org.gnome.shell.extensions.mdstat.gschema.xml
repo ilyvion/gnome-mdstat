@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="org.gnome.shell.extensions.mdstat" path="/org/gnome/shell/extensions/mdstat/">
+    <key name="remote-command" type="s">
+      <default>''</default>
+      <summary>Remote command</summary>
+      <description>Command prefix used to run the status query on another host, e.g. "ssh -i ~/.ssh/id_monitor server". The query is appended as a single argument and the result is run by the local shell. Empty means the arrays of this machine are monitored.</description>
+    </key>
+    <key name="poll-interval" type="i">
+      <range min="5" max="3600" />
+      <default>60</default>
+      <summary>Poll interval</summary>
+      <description>Seconds between status queries while all arrays are idle.</description>
+    </key>
+    <key name="active-poll-interval" type="i">
+      <range min="1" max="3600" />
+      <default>5</default>
+      <summary>Poll interval during activity</summary>
+      <description>Seconds between status queries while an array is syncing, checking, or otherwise busy.</description>
+    </key>
+    <key name="command-timeout" type="i">
+      <range min="1" max="300" />
+      <default>20</default>
+      <summary>Command timeout</summary>
+      <description>Seconds after which a status query that has not finished is killed.</description>
+    </key>
+  </schema>
+</schemalist>
